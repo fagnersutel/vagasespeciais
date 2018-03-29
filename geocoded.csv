@@ -1,0 +1,7 @@
+"name","addresses","zip","phone","type","lon","lat","geoAddress"
+"a","dos Andradas 261,  Porto Alegre",123,1112121," brewpub",NA,NA,"NA"
+"b","Duque de Caxias 402,  Porto Alegre",124,21221311," micro",NA,NA,"NA"
+"c","Mal. Floriano Peixoto 385,  Porto Alegre",125,5111122," brewpub",-51.2271743,-30.0323577,"r. mal. floriano peixoto, 385 - centro histórico, porto alegre - rs, 90020-060, brazil"
+"d","da Republica 441,  Porto Alegre",126,1122211212," regional",NA,NA,"NA"
+"e","Jose Bonifacio 595,  Porto Alegre",127,2121211," regional",-51.2115937,-30.037266,"av. josé bonifácio, 595 - bom fim, porto alegre - rs, 90040-130, brazil"
+"f","Heitor Vieira 322,  Porto Alegre",128,12212121," proprietor",NA,NA,"NA"

@@ -8,7 +8,8 @@ library(ggmap)
 fileToLoad <- file.choose(new = TRUE)
 
 # Read in the CSV data and store it in a variable 
-origAddress <- read.csv(fileToLoad, stringsAsFactors = FALSE)
+origAddress <- read.csv("geocode.csv", stringsAsFactors = FALSE)
+origAddress
 #origAddress <- read.csv("", stringsAsFactors = FALSE)
 # Initialize the data frame
 geocoded <- data.frame(stringsAsFactors = FALSE)
@@ -24,3 +25,4 @@ for(i in 1:nrow(origAddress)){
 }
 # Write a CSV file containing origAddress to the working directory
 write.csv(origAddress, "saida.csv", row.names=FALSE)
+
