@@ -110,3 +110,6 @@ leafIcons <- icons(
 leaflet(dfbase) %>% addTiles() %>% 
   addMarkers(~long, ~lat, icon=leafIcons, label=~as.character(paste( stations,",", depth,",", pontoVagas,"Vagas", sep = " ")), clusterOptions = markerClusterOptions())
 
+      
+leaflet(dfbase) %>% addTiles() %>% 
+  addMarkers(~long, ~lat, icon=leafIcons, label=~as.character(paste( stations,",", depth,",", pontoVagas,"Vagas", sep = " ")))
