@@ -17,9 +17,9 @@ base$mag <- as.numeric(base$mag)
 dfbase <- base
 names(dfbase)
 dim(dfbase)
-dfbase <- dfbase[dfbase$mag == 13, ]
+#dfbase <- dfbase[dfbase$mag == 13, ]
 dim(dfbase)
-dfbase$lat = dfbase$lat - .0008
+dfbase$lat = dfbase$lat - .0005
 getColor <- function(base) {
   sapply(base$mag, function(mag) {
     if(mag <= 1) {
