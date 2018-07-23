@@ -1,4 +1,4 @@
-# Extração do MySQL
+# ExtraÃ§Ã£o do MySQL
 #SELECT pontoLat, pontoLong, pontoEnd, idtipoSinal, tipoSinalDesc, pontoVagas
 #FROM ponto p, tipoSinal t 
 #WHERE p._idtipoSinal = t.idtipoSinal
@@ -16,7 +16,10 @@ names(base) <- c("lat", "long", "depth", "mag", "stations", "pontoVagas")
 base$mag <- as.numeric(base$mag)
 dfbase <- base
 names(dfbase)
-
+dim(dfbase)
+dfbase <- dfbase[dfbase$mag == 13, ]
+dim(dfbase)
+dfbase$lat = dfbase$lat - .0008
 getColor <- function(base) {
   sapply(base$mag, function(mag) {
     if(mag <= 1) {
